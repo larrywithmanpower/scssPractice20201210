@@ -1,0 +1,425 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* start form here */
+body{
+    font-family: '微軟正黑體', Arial;
+}
+a{
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+  }
+  .clearfix{
+      clear: both;
+  }
+/* wrap */
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.return{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+/* header */
+.header{
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+/* topheader */
+.topheader{
+    background-color: #f6f6f6;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.topheader ul{
+    float: right;
+}
+.topheader ul li{
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.topheader .facebook{
+    border-right: 2px solid #c0c0c0;
+    padding-right: 12px;
+}
+.topheader .facebook a{
+    color: #4460a0;
+}
+.topheader .twitter a{
+    color: #00aaec;
+}
+.topheader a:hover{
+    color: red;
+}
+/* btmheader */
+.btmheader{
+    /* padding-bottom: 10px; */
+}
+.btmheader h1{
+    float: left;
+    padding-bottom: 5px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.btmheader a{
+    display: block;
+}
+.btmheader h1 a{
+    width: 193px;
+    height: 48px;
+    background: url(../images/logo.png) no-repeat;
+    background-position: 20px 9px;
+}
+.btmheader .menu{
+    float: right;
+}
+.btmheader .menu > li{
+    float: left;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.btmheader ul > li > a{
+    padding-top: 10px;
+    color: #00cc99;
+    font-weight: bold;
+}
+.btmheader .menu .list:hover,.list.active{
+    border-bottom: 4px solid #00cc99;
+    padding-bottom: 13px;
+}
+/* 下拉選單dropDown */
+.list{
+    position: relative;
+}
+/* .menu li:hover .dropDown{
+    display: block;
+} */
+.dropDown{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+}
+.dropDown li a:hover{
+    color: red;
+}
+
+/* swiper */
+.swiper-container {
+    --swiper-pagination-color: #000;/* 調整分頁點顏色 */
+}
+.swiper-slide{
+    position: relative;
+}
+/* fstSwiper */
+.swiper-slide .fstTitle{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 100px 0 50px 30px;
+    color: #00cc99;
+    font-size: 50px;
+	line-height: 70px;
+}
+.swiper-slide .fstTitle span{
+    color: #fff;
+}
+.swiper-slide .fstBtn{
+    position: absolute;
+    bottom: 200px;
+    left: 85px;
+    width: 180px;
+    height: 55px;
+    padding: 17px 0;
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #00cc99;
+    border-radius: 10px;
+}
+.swiper-slide .fstBtn:hover{
+    background: red;
+}
+/* secSwiper */
+.swiper-slide .secTitle{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 120px 0 50px 30px;
+    color: #fff;
+    font-size: 50px;
+	line-height: 50px;
+}
+.swiper-slide .secTitle span{
+    color: #00cc99;
+	font-size: 22px;
+}
+.swiper-slide .secBtn{
+    position: absolute;
+    bottom: 200px;
+    left: 95px;
+    width: 180px;
+    height: 55px;
+    padding: 17px 0;
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #00cc99;
+    border-radius: 10px;
+}
+.swiper-slide .secBtn:hover{
+    background: red;
+}
+/* trdSwiper */
+.swiper-slide .trdTitle{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    padding: 120px 0 50px 30px;
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.swiper-slide .trdTitle span{
+    color: #00cc99;
+	font-size: 26px;
+}
+.swiper-slide .trdSearch{
+    position: absolute;
+    top: 300px;
+    left: 220px;
+    width: 600px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    background: url(../images/searchPic.png) no-repeat 560px 5px #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* 點擊隱藏naviga slide bug處理 */
+.swiper-container .swiper-button-hidden{ 
+    opacity: 0; 
+}
+/* content */
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px 0 40px ;
+    /* padding: 上 右 下 左; */
+    margin-bottom: 30px;
+}
+.course{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+.course .introduction{
+    margin-right: 30px; 
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 2px 2px #dbdbdb;
+}
+.content h4{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.introduction a{
+    color: #000;
+}
+.course p{
+    padding: 0 20px 20px 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+.content .detail{
+    list-style: disc;
+    padding: 4px 0 0 38px;
+    line-height: 20px;
+}
+.content span{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+/* table */
+.differ{
+    width: 1024px;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+.differ h2{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.differ table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.differ th,.differ td{
+    padding: 15px 100px 15px 30px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.differ th{
+    font-weight: bold;
+    text-align: left;
+    background-color: #f7f7f7;
+}
+.differ .green{
+    color: #00a469;
+}
+/* info */
+.info{
+    width: 1024px;
+    margin: 0 auto;
+    background: url(../images/bgrepeat.png) repeat-x;
+    padding: 30px 20px 25px 20px;
+}
+.info h3{
+    color: white;
+    font-size: 25PX;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 35px;
+}
+.info .message{
+    width: 550px;
+    height: 230px;
+    margin-right: 30px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid white;
+}
+.info .detail{
+    display: flex;
+}
+.detail ul li{
+    color: white;
+    margin-bottom: 10px;
+}
+.keyin input{
+    width: 520px;
+    height: 30px;
+    margin-top: 5px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+.keyin .sendout{
+    background-color: #00cc98;
+    border: 1px solid #00cc98;
+    color: white;
+    width: 80px;
+    height: 40px;
+    float: right;
+    cursor: pointer;
+    padding: 0px;
+}
+.keyin .sendout:hover{
+    color: red;
+    background-color: white;
+}
+
+/* footer */
+.footer{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+.footer h1 a{    
+    display: block;
+    width: 171px;
+    height: 36px;
+    margin: 20px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url(../images/footerlogo.png) no-repeat;
+}
+.footer ul li{
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+}
+.footer a{
+    color: red;
+}
+.footer a:hover{
+    color: blue;
+    font-weight: bold;
+}

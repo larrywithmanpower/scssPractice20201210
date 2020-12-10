@@ -1,0 +1,186 @@
+.header{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+}
+.topheader{
+    background-color: $whiteSmoke;
+    font-weight: bold;
+    padding-bottom: 8px;
+    ul{
+        float: right;
+    }
+    li{
+        float: left;
+        margin-top: 6px;
+        margin-right: 10px;
+    }
+    .facebook{
+        background-repeat: 2px solid $whiteSmoke;
+        padding-right: 12px;
+        a{
+            color: $blueFB;
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    .twitter{
+        a{
+            color: $blueTwitter;
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+}
+.btmheader{
+    h1{
+        float: left;
+        padding-bottom: 5px;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        a{
+            width: 193px;
+            height: 48px;
+            background: url(../images/logo.png) no-repeat;
+            background-position: 20px 9px;
+        }
+    }
+    a{
+        display: block;
+    }
+    .menu{
+        float: right;
+        li{
+            float: left;
+            margin-top: 10px;
+            margin-right: 25px;
+            a{
+                padding-top: 10px;
+                color: $CaribbeanGreen;
+                font-weight: bold;
+                border-bottom: 5px solid transparent;
+                padding-bottom: 12px;
+            }
+        }
+    }
+    .list{
+        position: relative;
+        &:hover,
+        &.active{
+            border-bottom: 5px solid $CaribbeanGreen;            
+        }
+    }
+    .dropDown{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        width: 150px;
+        a:hover{
+            color: $red;
+        }
+    }
+}
+
+// swiper
+.swiper-container{
+    --swiper-pagination-color: $black;
+    .swiper-slide{
+        position: relative;
+        .fstTitle{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            padding: 100px 0 50px 30px;
+            color: $CaribbeanGreen;
+            font-size: $font-l;
+            line-height: 70px;
+            span{
+                color: $white;
+            }
+        }
+        .fstBtn{
+            position: absolute;
+            bottom: 200px;
+            left: 85px;
+            width: 180px;
+            height: 55px;
+            padding: 17px 0;
+            display: block;
+            color: $white;
+            font-size: $font-m;
+            text-align: center;
+            background: $CaribbeanGreen;
+            border-radius: 10px;
+            &:hover{
+                background: $red;
+            }
+        }
+        .secTitle{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            padding: 120px 0 50px 30px;
+            color: $white;
+            font-size: $font-l;
+            line-height: 50px;
+            span{
+                color: $CaribbeanGreen;
+                // Need to setting variable??
+                font-size: 22px;
+            }
+        }
+        .secBtn{
+            position: absolute;
+            bottom: 200px;
+            left: 60px;
+            width: 180px;
+            height: 55px;
+            padding: 17px 0;
+            display: block;
+            color: $white;
+            font-size: $font-m;
+            text-align: center;
+            background: $CaribbeanGreen;
+            border-radius: 10px;
+            &:hover{
+                background: $red;
+            }
+        }
+        .trdTitle{
+            position: absolute;
+            top: 50px;
+            left: 300px;
+            padding: 120px 0 50px 30px;
+            color: $white;
+            font-size: $font-l;
+            line-height: 50px;
+            text-align: center;
+            span{
+                color: $CaribbeanGreen;
+                font-size: 26px;
+            }
+        }
+        .trdSearch{
+            position: absolute;
+            top: 300px;
+            left: 220px;
+            width: 600px;
+            height: 40px;
+            padding: 0 20px;
+            font-size: $font-m;
+            background: url(../images/searchPic.png) no-repeat 560px 5px $white;
+            border-radius: 5px;
+            cursor: pointer;
+            &:focus{
+                border: 2px solid $red;
+            }
+        }
+    }
+    .swiper-button-hidden{
+        opacity: 0;
+    }
+}

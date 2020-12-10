@@ -1,0 +1,52 @@
+.info{
+    width: 1024px;
+    margin: 0 auto;
+    background: url(../images/bgrepeat.png) repeat-x;
+    padding: 30px 20px 25px 20px;
+    h3{
+        color: $white;
+        font-size: $font-m;
+        text-align: center;
+        margin-bottom: 25px;
+        line-height: 35px;
+    }
+    .message{
+        width: 550px;
+        height: 230px;
+        margin-right: 30px;
+        padding: 10px;
+        font-size: $font-m;
+        background-origin: 5px 5px 5px 5px;
+        border: 10x solid $white;
+    }
+    .detail{
+        display: flex;
+        li{
+            color: $white;
+            margin-bottom: 15px;
+        }
+        input{
+            width: 520px;
+            height: 30px;
+            margin-top: 5px;
+            display: block;
+            border: 1px solid $white;
+            border-radius: 5px 5px 5px 5px;
+            padding: 10px 0 10px 10px;
+            cursor: pointer;
+        }
+        .sendout{
+            background-color: $CaribbeanGreen;
+            border: 1px solid $CaribbeanGreen;
+            color: $white;
+            width: 80px;
+            height: 35px;
+            float: right;
+            padding: 0;
+            &:hover{
+                color: $red;
+                background-color: $white;
+            }
+        }
+    }
+}

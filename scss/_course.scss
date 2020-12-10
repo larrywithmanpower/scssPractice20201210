@@ -1,0 +1,42 @@
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px 0 40px;
+    margin-bottom: 30px;
+    h4{
+        font-weight: bold;
+        font-size: $font-m;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .detail{
+        list-style: disc;
+        padding: 4px 0 0 38px;
+        line-height: 20px;
+    }
+    span{
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+.course{
+    display: flex;
+    justify-content: space-around;
+    font-size: $font-s;
+    .introduction{
+        width: 33%;
+        margin-right: 30px;
+        border-left: 1px solid $whiteSmoke;
+        border-right: 1px solid $whiteSmoke;
+        border-bottom: 1px solid $whiteSmoke;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 2px 2px $whiteSmoke;
+        a{
+            color: $black;
+        }
+    }
+    p{
+        padding: 0 20px 20px 20px;
+        line-height: 20px;
+    }
+}

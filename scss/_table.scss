@@ -1,0 +1,27 @@
+.differ{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    table{
+        margin: 0 auto;
+    }
+    h2{
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: $font-m;
+        text-align: center;        
+    }
+    th{
+        font-weight: bold;
+        text-align: left;
+        background-color: $whiteSmoke;
+    }
+    th,td{
+        padding: 15px 100px 15px 30px;
+        border-top: 1px solid $gray86;
+        border-bottom: 1px solid $gray86;
+    }
+    .green{
+        color: $CaribbeanGreen;
+    }
+}

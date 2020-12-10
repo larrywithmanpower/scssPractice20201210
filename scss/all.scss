@@ -1,0 +1,21 @@
+@import "variable";
+@import "meyerwebReset";
+// 要寫進header還是放在這就好？
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+.return{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+@import "header";
+@import "course";
+@import "table";
+@import "info";
+@import "footer";
+@import "lightbox";
+
