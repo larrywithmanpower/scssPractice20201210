@@ -4,7 +4,7 @@
     "sources": [
         "../scss/all.scss",
         "../scss/_variable.scss",
-        "../scss/_meyerwebReset.scss",
+        "../scss/_reset.scss",
         "../scss/_header.scss",
         "../scss/_course.scss",
         "../scss/_table.scss",
